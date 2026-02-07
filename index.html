@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NajmiAgriculture - Sustainable Agriculture Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-content">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        </div>
+        <span class="logo-text">NajmiAgriculture</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#vision" class="nav-link">Vision</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="btn-primary btn-sm">Get in Touch</button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="mobileMenu">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#vision" class="mobile-nav-link">Vision</a>
+      <a href="#team" class="mobile-nav-link">Team</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#gallery" class="mobile-nav-link">Gallery</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <button class="btn-primary w-full">Get in Touch</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('assets/hero-bg.jpg')">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-float-1"></div>
+    <div class="hero-float-2"></div>
+
+    <div class="hero-content container">
+      <div class="hero-inner">
+        
+        <h1 class="hero-title animate-fade-up" style="animation-delay: 0.1s">
+          Cultivating <span class="text-emerald">Growth</span> Through Modern Agriculture
+        </h1>
+
+        <p class="hero-subtitle animate-fade-up" style="animation-delay: 0.2s">
+          Supplying and installing agricultural goods, specializing in fertigation systems,
+          modern farming solutions, and advisory services for government agencies and public clients.
+        </p>
+
+        <div class="hero-buttons animate-fade-up" style="animation-delay: 0.3s">
+          <button class="btn-primary">Explore Our Projects</button>
+          <button class="btn-outline-light">Learn More</button>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats animate-fade-up" style="animation-delay: 0.4s">
+          <div class="stat-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stat-icon"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>
+            <div class="stat-value">70%</div>
+            <div class="stat-label">Trusted by Government & Private Clients</div>
+          </div>
+          <div class="stat-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stat-icon"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <div class="stat-value">90%</div>
+            <div class="stat-label">Competitive & Transparent Pricing</div>
+          </div>
+          <div class="stat-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stat-icon"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            <div class="stat-value">80%</div>
+            <div class="stat-label">Experienced in Fertigation & Modern Agriculture</div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Company Overview Section -->
+  <section id="about" class="section bg-background leaf-pattern">
+    <div class="container">
+      <div class="grid-2 items-center">
+        <!-- Left Content -->
+        <div class="animate-fade-up">
+          <span class="badge badge-sage">About Us</span>
+          <h2 class="section-title">Cultivating Growth Through Modern Agriculture</h2>
+          <p class="section-text">
+            NAJMI AGRICULTURE is a Bumiputera company registered under the Registration of Businesses Act 1956 on 25 April 2023, specializing in supplying and installing agricultural goods, especially fertigation systems. We serve government agencies and public clients with quality products, installation, and advisory services, blending traditional and modern farming techniques.
+          </p>
+
+          <div class="checklist">
+            <div class="check-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span>Registered since April 2023</span>
+            </div>
+            <div class="check-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span>Bumiputera owned company</span>
+            </div>
+            <div class="check-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span>Fertigation specialists</span>
+            </div>
+            <div class="check-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span>Professional workforce</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content - Feature Cards -->
+        <div class="feature-cards">
+          <div class="feature-card glass-card-hover animate-fade-up">
+            <div class="feature-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Sustainable Practices</h3>
+              <p class="feature-desc">Implementing eco-friendly farming methods that protect our environment.</p>
+            </div>
+          </div>
+          <div class="feature-card glass-card-hover animate-fade-up" style="animation-delay: 0.1s">
+            <div class="feature-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Quality Assurance</h3>
+              <p class="feature-desc">Certified processes ensuring the highest standards in agricultural production.</p>
+            </div>
+          </div>
+          <div class="feature-card glass-card-hover animate-fade-up" style="animation-delay: 0.2s">
+            <div class="feature-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <div>
+              <h3 class="feature-title">Government & Private Clients</h3>
+              <p class="feature-desc">Serving government agencies and private clients with reliable agricultural solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission Section -->
+  <section id="vision" class="section bg-muted">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="badge badge-sage">Our Purpose</span>
+        <h2 class="section-title">Mission & Vision</h2>
+        <p class="section-subtitle">
+          Guided by purpose, driven by impact. Our commitment to sustainable agriculture
+          shapes everything we do.
+        </p>
+      </div>
+
+      <!-- Vision & Mission Grid -->
+      <div class="vision-mission-grid">
+        <!-- Vision Title -->
+        <div class="vm-vision-title">
+          <h3 class="vm-title-text">Vision</h3>
+        </div>
+        <!-- Vision Text -->
+        <div class="vm-vision-text vision-card glass-card-hover animate-fade-up">
+          <p class="vision-desc">
+            To become a leading agriculture company delivering innovative, sustainable, and high-impact farming solutions that drive long-term growth and food security.
+          </p>
+        </div>
+        <!-- Mission Title -->
+        <div class="vm-mission-title">
+          <h3 class="vm-title-text">Mission</h3>
+        </div>
+        <!-- Mission 1 -->
+        <div class="vm-mission-1 mission-stripe mission-stripe-green animate-fade-up">
+          <span class="mission-number">1</span>
+          <p class="vision-desc">To provide modern agricultural and fertigation solutions with high standards of quality and reliability.</p>
+        </div>
+        <!-- Mission 2 -->
+        <div class="vm-mission-2 mission-stripe mission-stripe-white animate-fade-up" style="animation-delay: 0.1s;">
+          <span class="mission-number">2</span>
+          <p class="vision-desc">To promote sustainable farming practices that benefit farmers, partners, and the environment.</p>
+        </div>
+        <!-- Mission 3 -->
+        <div class="vm-mission-3 mission-stripe mission-stripe-green animate-fade-up" style="animation-delay: 0.2s;">
+          <span class="mission-number">3</span>
+          <p class="vision-desc">To deliver reliable and innovative farming solutions.</p>
+        </div>
+        <!-- Mission 4 -->
+        <div class="vm-mission-4 mission-stripe mission-stripe-white animate-fade-up" style="animation-delay: 0.3s;">
+          <span class="mission-number">4</span>
+          <p class="vision-desc">To build strong, long-term partnerships with government agencies, private sectors, and local communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Background Section -->
+  <section id="background" class="section bg-background">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="badge badge-sage">Our Expertise</span>
+        <h2 class="section-title">Company Background</h2>
+        <p class="section-subtitle">
+          Discover our diverse range of services and expertise across multiple sectors.
+        </p>
+      </div>
+
+      <div class="background-grid">
+        <!-- Construction -->
+        <div class="background-card glass-card-hover animate-fade-up">
+          <button class="background-header" onclick="toggleBackground(this)">
+            <div class="background-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/><path d="M12 2v4"/><path d="M7 2v4"/><path d="M17 2v4"/></svg>
+            </div>
+            <h3 class="background-title">Construction</h3>
+            <svg class="background-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="background-content">
+            <div class="background-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=250&fit=crop" alt="Construction" class="background-image">
+            </div>
+            <p>We provide comprehensive construction services for agricultural infrastructure, including greenhouses, farm buildings, storage facilities, and irrigation infrastructure. Our team ensures quality construction that meets industry standards and supports sustainable farming operations.</p>
+            <ul class="background-list">
+              <li>Greenhouse construction</li>
+              <li>Farm building development</li>
+              <li>Storage facility construction</li>
+              <li>Infrastructure development</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Fertigation -->
+        <div class="background-card glass-card-hover animate-fade-up" style="animation-delay: 0.1s">
+          <button class="background-header" onclick="toggleBackground(this)">
+            <div class="background-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+            </div>
+            <h3 class="background-title">Fertigation</h3>
+            <svg class="background-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="background-content">
+            <div class="background-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?w=400&h=250&fit=crop" alt="Fertigation System" class="background-image">
+            </div>
+            <p>Our specialty lies in fertigation systems that combine irrigation with fertilization for optimal plant nutrition. We design, supply, and install advanced fertigation solutions that maximize crop yield while minimizing resource waste.</p>
+            <ul class="background-list">
+              <li>Automated fertigation systems</li>
+              <li>Nutrient management solutions</li>
+              <li>Precision dosing equipment</li>
+              <li>System maintenance & support</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Piping System -->
+        <div class="background-card glass-card-hover animate-fade-up" style="animation-delay: 0.2s">
+          <button class="background-header" onclick="toggleBackground(this)">
+            <div class="background-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 14.5A2.5 2.5 0 0 0 6.5 12H20"/><path d="M4 9.5A2.5 2.5 0 0 1 6.5 7H20"/><path d="M4 4.5A2.5 2.5 0 0 0 6.5 2H20"/></svg>
+            </div>
+            <h3 class="background-title">Piping System</h3>
+            <svg class="background-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="background-content">
+            <div class="background-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1585155770913-4777c86d8679?w=400&h=250&fit=crop" alt="Piping System" class="background-image">
+            </div>
+            <p>We specialize in agricultural piping systems for water distribution, irrigation networks, and drainage solutions. Our piping installations are designed for durability, efficiency, and easy maintenance.</p>
+            <ul class="background-list">
+              <li>Water distribution networks</li>
+              <li>Drip irrigation piping</li>
+              <li>Drainage systems</li>
+              <li>HDPE & PVC installations</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Agriculture -->
+        <div class="background-card glass-card-hover animate-fade-up" style="animation-delay: 0.3s">
+          <button class="background-header" onclick="toggleBackground(this)">
+            <div class="background-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <h3 class="background-title">Agriculture</h3>
+            <svg class="background-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="background-content">
+            <div class="background-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=250&fit=crop" alt="Agriculture" class="background-image">
+            </div>
+            <p>Our core expertise in agriculture covers modern farming techniques, crop management, and sustainable practices. We provide consultation and implementation services to help farmers achieve optimal yields while preserving the environment.</p>
+            <ul class="background-list">
+              <li>Crop management consulting</li>
+              <li>Sustainable farming practices</li>
+              <li>Agricultural technology integration</li>
+              <li>Farm planning & development</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Supply -->
+        <div class="background-card glass-card-hover animate-fade-up" style="animation-delay: 0.4s">
+          <button class="background-header" onclick="toggleBackground(this)">
+            <div class="background-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+            </div>
+            <h3 class="background-title">Supply</h3>
+            <svg class="background-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="background-content">
+            <div class="background-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=250&fit=crop" alt="Supply Chain" class="background-image">
+            </div>
+            <p>We supply high-quality agricultural products, equipment, and materials to support farming operations. Our supply chain ensures timely delivery of essential items from trusted manufacturers and suppliers.</p>
+            <ul class="background-list">
+              <li>Agricultural equipment supply</li>
+              <li>Fertilizers & nutrients</li>
+              <li>Seeds & planting materials</li>
+              <li>Farming tools & accessories</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organization Chart Section -->
+  <section id="team" class="section bg-background">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="badge badge-sage">Leadership</span>
+        <h2 class="section-title">Our Organization</h2>
+        <p class="section-subtitle">
+          Meet the visionary leaders driving NajmiAgriculture's mission for sustainable agriculture.
+        </p>
+      </div>
+
+      <!-- Managing Director Card -->
+      <div class="ceo-card glass-card-hover animate-fade-up">
+        <div class="ceo-gradient-bar"></div>
+        <div class="ceo-avatar" style="overflow: hidden;">
+          <img src="assets/dpNajmi.png" alt="Mohamad Najmi bin Ghazali" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <h3 class="ceo-name">Mohamad Najmi bin Ghazali</h3>
+        <p class="ceo-position">Managing Director</p>
+        <p class="ceo-bio">
+          Leading NajmiAgriculture's vision and strategic direction for sustainable agricultural excellence.
+        </p>
+        <div class="ceo-social">
+          <button class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </button>
+          <button class="social-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Connecting Line -->
+      <div class="org-line"></div>
+
+      <!-- Operation Manager and Finance and Account -->
+      <div class="exec-grid">
+        <div class="exec-card glass-card-hover animate-fade-up">
+          <div class="exec-avatar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4 class="exec-name">Khalid bin Razak</h4>
+          <p class="exec-position">Operation Manager</p>
+          <p class="exec-bio">Overseeing daily operations and ensuring operational excellence.</p>
+        </div>
+        <div class="exec-card glass-card-hover animate-fade-up" style="animation-delay: 0.1s">
+          <div class="exec-avatar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4 class="exec-name">Anis Zalikha binti Omar</h4>
+          <p class="exec-position">Finance and Account</p>
+          <p class="exec-bio">Managing financial operations and accounting procedures.</p>
+        </div>
+      </div>
+
+      <!-- Connecting Line -->
+      <div class="org-line"></div>
+
+      <!-- Farm Workers -->
+      <div class="exec-grid">
+        <div class="exec-card glass-card-hover animate-fade-up">
+          <div class="exec-avatar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4 class="exec-name">Syarifuddin bin Amad</h4>
+          <p class="exec-position">Farm Worker</p>
+          <p class="exec-bio">Dedicated to maintaining farm operations and crop cultivation.</p>
+        </div>
+        <div class="exec-card glass-card-hover animate-fade-up" style="animation-delay: 0.1s">
+          <div class="exec-avatar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4 class="exec-name">Zulkifli bin Mat Khir</h4>
+          <p class="exec-position">Farm Worker</p>
+          <p class="exec-bio">Supporting farm activities and sustainable farming practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Marquee Section -->
+  <section class="client-section bg-primary">
+    <div class="container mb-8">
+      <div class="text-center">
+        <span class="badge badge-emerald-dark">Trusted Partnerships</span>
+        <h2 class="client-title">Our Previous Clients</h2>
+      </div>
+    </div>
+
+    <div class="marquee-container">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+
+      <div class="marquee-row marquee-animate">
+        <div class="client-tag">Lembaga Kemajuan Wilayah Kedah</div>
+        <div class="client-tag">Pertubuhan Peladang Kawasan</div>
+        <div class="client-tag">Jabatan Pertanian</div>
+        <div class="client-tag">FAMA</div>
+        <div class="client-tag">Kolej Pertanian Malaysia</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="client-tag">Lembaga Kemajuan Wilayah Kedah</div>
+        <div class="client-tag">Pertubuhan Peladang Kawasan</div>
+        <div class="client-tag">Jabatan Pertanian</div>
+        <div class="client-tag">FAMA</div>
+        <div class="client-tag">Kolej Pertanian Malaysia</div>
+      </div>
+
+      <div class="marquee-row marquee-animate-reverse">
+        <div class="client-tag-alt">Kolej Pertanian Malaysia</div>
+        <div class="client-tag-alt">FAMA</div>
+        <div class="client-tag-alt">Jabatan Pertanian</div>
+        <div class="client-tag-alt">Pertubuhan Peladang Kawasan</div>
+        <div class="client-tag-alt">Lembaga Kemajuan Wilayah Kedah</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="client-tag-alt">Kolej Pertanian Malaysia</div>
+        <div class="client-tag-alt">FAMA</div>
+        <div class="client-tag-alt">Jabatan Pertanian</div>
+        <div class="client-tag-alt">Pertubuhan Peladang Kawasan</div>
+        <div class="client-tag-alt">Lembaga Kemajuan Wilayah Kedah</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section bg-muted">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="badge badge-sage">Accreditation</span>
+        <h2 class="section-title">Licenses & Certifications</h2>
+        <p class="section-subtitle">
+          Our commitment to excellence is validated by internationally recognized certifications.
+        </p>
+      </div>
+
+      <div class="cert-carousel" id="certCarousel">
+        <button class="carousel-btn carousel-prev" id="certPrev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+
+        <div class="cert-track" id="certTrack">
+          <div class="cert-card glass-card-hover" data-image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=500&fit=crop">
+            <div class="cert-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=500&fit=crop" alt="ISO 9001:2015" class="cert-image">
+              <span class="cert-year">2018</span>
+            </div>
+            <h3 class="cert-name">ISO 9001:2015</h3>
+            <p class="cert-desc">Quality Management System</p>
+          </div>
+          <div class="cert-card glass-card-hover" data-image="https://images.unsplash.com/photo-1589923188651-268a9765e432?w=400&h=500&fit=crop">
+            <div class="cert-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1589923188651-268a9765e432?w=400&h=500&fit=crop" alt="Organic Certified" class="cert-image">
+              <span class="cert-year">2019</span>
+            </div>
+            <h3 class="cert-name">Organic Certified</h3>
+            <p class="cert-desc">USDA Organic Standards</p>
+          </div>
+          <div class="cert-card glass-card-hover" data-image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=500&fit=crop">
+            <div class="cert-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=500&fit=crop" alt="GlobalG.A.P." class="cert-image">
+              <span class="cert-year">2020</span>
+            </div>
+            <h3 class="cert-name">GlobalG.A.P.</h3>
+            <p class="cert-desc">Good Agricultural Practices</p>
+          </div>
+          <div class="cert-card glass-card-hover" data-image="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=500&fit=crop">
+            <div class="cert-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=500&fit=crop" alt="ISO 14001:2015" class="cert-image">
+              <span class="cert-year">2021</span>
+            </div>
+            <h3 class="cert-name">ISO 14001:2015</h3>
+            <p class="cert-desc">Environmental Management</p>
+          </div>
+          <div class="cert-card glass-card-hover" data-image="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=500&fit=crop">
+            <div class="cert-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=500&fit=crop" alt="Fair Trade" class="cert-image">
+              <span class="cert-year">2022</span>
+            </div>
+            <h3 class="cert-name">Fair Trade</h3>
+            <p class="cert-desc">Ethical Trading Standards</p>
+          </div>
+        </div>
+
+        <button class="carousel-btn carousel-next" id="certNext">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Experience Section -->
+  <section id="projects" class="section bg-background">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="badge badge-sage">Track Record</span>
+        <h2 class="section-title">Project Experience</h2>
+        <p class="section-subtitle">
+          Delivering impactful agricultural solutions across the globe.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="project-card glass-card-hover animate-fade-up">
+          <div class="project-meta">
+            <div class="project-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Singapore
+            </div>
+            <div class="project-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+              2023
+            </div>
+          </div>
+          <h3 class="project-title">Vertical Farming Initiative</h3>
+          <p class="project-desc">Implemented a 50,000 sq ft vertical farming facility producing 10x yield per acre.</p>
+          <div class="project-footer">
+            <span class="project-impact">500% increase in production efficiency</span>
+            <button class="project-link">
+              <span>Learn More</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card glass-card-hover animate-fade-up" style="animation-delay: 0.1s">
+          <div class="project-meta">
+            <div class="project-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              California, USA
+            </div>
+            <div class="project-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+              2022
+            </div>
+          </div>
+          <h3 class="project-title">Sustainable Irrigation System</h3>
+          <p class="project-desc">Deployed smart irrigation across 5,000 acres, reducing water usage by 40%.</p>
+          <div class="project-footer">
+            <span class="project-impact">2M gallons water saved annually</span>
+            <button class="project-link">
+              <span>Learn More</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Gallery Section -->
+  <section id="gallery" class="section bg-muted">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="badge badge-sage">Our Work</span>
+        <h2 class="section-title">Project Gallery</h2>
+        <p class="section-subtitle">
+          A visual journey through our sustainable agriculture projects worldwide.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item animate-fade-up" data-src="assets/gallery-1.jpg">
+          <img src="assets/gallery-1.jpg" alt="Hydroponic Greenhouse" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Technology</span>
+            <h3 class="gallery-title">Hydroponic Greenhouse</h3>
+          </div>
+        </div>
+        <div class="gallery-item animate-fade-up" style="animation-delay: 0.1s" data-src="assets/gallery-2.jpg">
+          <img src="assets/gallery-2.jpg" alt="Golden Wheat Harvest" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Farming</span>
+            <h3 class="gallery-title">Golden Wheat Harvest</h3>
+          </div>
+        </div>
+        <div class="gallery-item animate-fade-up" style="animation-delay: 0.2s" data-src="assets/gallery-3.jpg">
+          <img src="assets/gallery-3.jpg" alt="Organic Vegetable Fields" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Sustainable</span>
+            <h3 class="gallery-title">Organic Vegetable Fields</h3>
+          </div>
+        </div>
+        <div class="gallery-item animate-fade-up" style="animation-delay: 0.3s" data-src="assets/gallery-4.jpg">
+          <img src="assets/gallery-4.jpg" alt="Drone Monitoring" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Technology</span>
+            <h3 class="gallery-title">Drone Monitoring</h3>
+          </div>
+        </div>
+        <div class="gallery-item animate-fade-up" style="animation-delay: 0.4s" data-src="assets/gallery-5.jpg">
+          <img src="assets/gallery-5.jpg" alt="Fresh Harvest" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Products</span>
+            <h3 class="gallery-title">Fresh Harvest</h3>
+          </div>
+        </div>
+        <div class="gallery-item animate-fade-up" style="animation-delay: 0.5s" data-src="assets/gallery-6.jpg">
+          <img src="assets/gallery-6.jpg" alt="Rice Terraces" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Traditional</span>
+            <h3 class="gallery-title">Rice Terraces</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox hidden" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <img src="" alt="Gallery" class="lightbox-image" id="lightboxImage">
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section bg-background">
+    <div class="container">
+      <div class="grid-2 items-center">
+        <!-- Left Content -->
+        <div>
+          <span class="badge badge-sage">Why Us</span>
+          <h2 class="section-title">Why Choose NajmiAgriculture?</h2>
+          <p class="section-text">
+            We combine deep agricultural expertise with cutting-edge technology to deliver
+            solutions that are sustainable, efficient, and tailored to your specific needs.
+          </p>
+
+          <div class="reasons-grid">
+            <div class="reason-item animate-fade-up">
+              <div class="reason-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h3 class="reason-title">Experienced Since 2023</h3>
+                <p class="reason-desc">Proven expertise in fertigation and modern agriculture solutions.</p>
+              </div>
+            </div>
+            <div class="reason-item animate-fade-up" style="animation-delay: 0.1s">
+              <div class="reason-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h3 class="reason-title">Professional Workforce</h3>
+                <p class="reason-desc">Dedicated team of professionals ready to deliver quality agricultural services.</p>
+              </div>
+            </div>
+            <div class="reason-item animate-fade-up" style="animation-delay: 0.2s">
+              <div class="reason-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+              </div>
+              <div>
+                <h3 class="reason-title">Quality Guaranteed</h3>
+                <p class="reason-desc">High standards of quality and reliability in all our agricultural services.</p>
+              </div>
+            </div>
+            <div class="reason-item animate-fade-up" style="animation-delay: 0.3s">
+              <div class="reason-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+              </div>
+              <div>
+                <h3 class="reason-title">Sustainable Practices</h3>
+                <p class="reason-desc">Promoting sustainable farming practices that benefit farmers, partners, and the environment.</p>
+              </div>
+            </div>
+            <div class="reason-item animate-fade-up" style="animation-delay: 0.4s">
+              <div class="reason-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+              </div>
+              <div>
+                <h3 class="reason-title">Competitive Pricing</h3>
+                <p class="reason-desc">Transparent and competitive pricing for all agricultural services and products.</p>
+              </div>
+            </div>
+            <div class="reason-item animate-fade-up" style="animation-delay: 0.5s">
+              <div class="reason-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              </div>
+              <div>
+                <h3 class="reason-title">Bumiputera Company</h3>
+                <p class="reason-desc">Registered Bumiputera company committed to serving local communities and agencies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content - Stats Card -->
+        <div class="impact-card glass-card animate-fade-up">
+          <h3 class="impact-title">Our Impact in Numbers</h3>
+
+          <div class="impact-stats">
+            <div class="impact-stat">
+              <div class="impact-value">70%</div>
+              <div class="impact-label">Trusted by Government & Private Clients</div>
+            </div>
+            <div class="impact-stat">
+              <div class="impact-value">90%</div>
+              <div class="impact-label">Competitive & Transparent Pricing</div>
+            </div>
+            <div class="impact-stat">
+              <div class="impact-value">80%</div>
+              <div class="impact-label">Fertigation & Modern Agriculture</div>
+            </div>
+            <div class="impact-stat">
+              <div class="impact-value">75%</div>
+              <div class="impact-label">Teamwork & Technical Expertise</div>
+            </div>
+          </div>
+
+          <div class="impact-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            <span>Trusted by Industry Leaders</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section bg-primary">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="badge badge-emerald-dark">Expertise</span>
+        <h2 class="skills-title">Our Skills & Expertise</h2>
+        <p class="skills-subtitle">
+          Decades of experience translated into measurable capabilities.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-item animate-fade-up">
+          <div class="skill-header">
+            <span class="skill-name">System Installation</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-item animate-fade-up" style="animation-delay: 0.1s">
+          <div class="skill-header">
+            <span class="skill-name">Technical Expertise</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-item animate-fade-up" style="animation-delay: 0.2s">
+          <div class="skill-header">
+            <span class="skill-name">Fertigation</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-item animate-fade-up" style="animation-delay: 0.3s">
+          <div class="skill-header">
+            <span class="skill-name">Teamwork</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bank Information Section -->
+  <section class="section bg-muted">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="badge badge-sage">Payment</span>
+        <h2 class="section-title">Bank Information</h2>
+        <p class="section-subtitle">
+          All payments should be made payable to Najmi Agriculture.
+        </p>
+      </div>
+
+      <div class="ceo-card glass-card-hover animate-fade-up" style="max-width: 40rem;">
+        <div class="ceo-gradient-bar"></div>
+        <div style="padding-top: 1rem; display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 200px;">
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; text-align: left;">
+              <div class="check-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                <span><strong>Company Name:</strong> Najmi Agriculture</span>
+              </div>
+              <div class="check-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                <span><strong>Bank Name:</strong> Maybank Berhad</span>
+              </div>
+              <div class="check-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                <span><strong>Account Number:</strong> 552125607644</span>
+              </div>
+            </div>
+          </div>
+          <div style="flex-shrink: 0;">
+            <img src="assets/qrNajmi.png" alt="QR Code - Najmi Agriculture" style="width: 140px; height: 140px; border-radius: 0.75rem; object-fit: contain;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <span class="logo-text-light">NajmiAgriculture</span>
+          </a>
+          <p class="footer-desc">
+            Cultivating Growth Through Modern Agriculture. Supplying and installing agricultural goods, specializing in fertigation systems.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-links">
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-list">
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#team" class="footer-link">Our Team</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#gallery" class="footer-link">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div class="footer-links">
+          <h3 class="footer-heading">Services</h3>
+          <ul class="footer-list">
+            <li><a href="#background" class="footer-link">Construction</a></li>
+            <li><a href="#background" class="footer-link">Fertigation</a></li>
+            <li><a href="#background" class="footer-link">Piping System</a></li>
+            <li><a href="#background" class="footer-link">Agriculture Supply</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h3 class="footer-heading">Contact Us</h3>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>najmiagriculture@gmail.com</span>
+            </li>
+            <li class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+60 17-879 2022</span>
+            </li>
+            <li class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>LOT PT7617 Persiaran 23, Bdr Baru Beris Jaya, 08700 Jeniang, Sik, Kedah Darul Aman</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter glass-card">
+        <div class="newsletter-content">
+          <div>
+            <h3 class="newsletter-title">Subscribe to Our Newsletter</h3>
+            <p class="newsletter-desc">Stay updated with the latest in sustainable agriculture.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" class="newsletter-input">
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Najmi Agriculture. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          <a href="#" class="footer-bottom-link">Terms of Service</a>
+          <button class="scroll-top-btn" id="scrollTopBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
